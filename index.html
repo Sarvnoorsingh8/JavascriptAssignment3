@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Pizza ordering form</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Heading for the pizza ordering form -->
+    <h1>SSK Pizzeria Order Form</h1>
+    <!-- Form for ordering pizza -->
+    <form id="pizzaForm">
+        <!-- Label and dropdown for selecting pizza size -->
+        <label for="size">Select Pizza Size:</label>
+        <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br>
+
+        <!-- Label and dropdown for selecting crust type -->
+        <label for="crust">Select Crust Type:</label>
+        <select id="crust" name="crust">
+            <option value="thin">Thin</option>
+            <option value="thick">Thick</option>
+            <option value="stuffed">Stuffed</option>
+            <option value="pan">Pan</option>
+            <option value="wood-fired">Wood Fired</option>
+            <option value="flatbread">Flatbread</option>
+        </select><br>
+
+        <!-- Label and checkboxes for selecting toppings -->
+        <label>Choose Toppings:</label><br>
+        <fieldset id="toppings">
+            <input type="checkbox" name="toppings" value="cheese"> <label>Cheese</label><br>
+            <input type="checkbox" name="toppings" value="pepperoni"> <label>Pepperoni</label><br>
+            <input type="checkbox" name="toppings" value="mushrooms"> <label>Mushrooms</label><br>
+            <input type="checkbox" name="toppings" value="onions"> <label>Onions</label><br>
+            <input type="checkbox" name="toppings" value="sausage"> <label>Sausage</label><br>
+            <input type="checkbox" name="toppings" value="bell peppers"> <label>Bell Peppers</label><br>
+        </fieldset>
+
+
+        <!-- Button to place the pizza order -->
+        <button type="button" onclick="orderPizza()">Order</button>
+    </form>
+
+    <!-- To displaying student information -->
+    <p id="studentInfo"></p>
+
+    <!-- JavaScript file for handling pizza ordering functionality -->
+    <script src="/js/script.js" defer></script>
+</body>
+
+</html>
